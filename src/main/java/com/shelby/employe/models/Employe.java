@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Data
 @Table(name = "table_des_étudiants ")
 public class Employe {
 
@@ -26,5 +25,53 @@ public class Employe {
     private String email;
     @Column(name = "Employe_departement")
     private String department;
+
+    public Long getEmployeId() {
+        return employeId;
+    }
+
+    public void setEmployeId(Long employeId) {
+        this.employeId = employeId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Long getAge() {
+        return age;
+    }
+
+    public void setAge(Long age) {
+        this.age = age;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
 
 }
